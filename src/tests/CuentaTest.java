@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import sesion3.Cuenta;
+
 class CuentaTest {
 
 	Cuenta cuenta;
@@ -31,16 +33,16 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		cuenta.ingresar(500);
+		cuenta.ingresar(500.0);
 		
-		assertEquals(500, cuenta.getSaldo());
+		assertEquals(500.0, cuenta.getSaldo());
 	}
 	
 	@Test
 	void testRetirar() {
-		cuenta.retirar(500);
+		cuenta.retirar(500.0);
 		
-		assertEquals(-500, cuenta.getSaldo());
+		assertEquals(-500.0, cuenta.getSaldo());
 	}
 
 }
