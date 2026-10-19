@@ -16,9 +16,11 @@ public class Cuenta {
 	
 	public void ingresar(double s) {
 		saldo+=s;
+		
 	}
 	
 	public void retirar(double s) {
 		saldo-=s;
+		
 	}
 }
