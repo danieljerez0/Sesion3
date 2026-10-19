@@ -20,7 +20,9 @@ public class Cuenta {
 	}
 	
 	public void retirar(double s) {
-		saldo-=s;
+		if(this.saldo-s >= -500.0)
+			saldo-=s;
+		else System.out.println("Fondos insuficientes (saldo " + this.saldo + " €) en la cuenta " + this.numero + " para el reintegro de " + s + " €");
 		
 	}
 
